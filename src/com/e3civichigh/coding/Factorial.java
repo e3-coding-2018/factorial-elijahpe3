@@ -7,7 +7,7 @@ public class Factorial
         final int NUM_FACTS = 100;
 
         // TODO 1: Please create a for loop that counts from 0 up to NUM_FACTS
-        for () {
+        for (int i = 0; i < NUM_FACTS; i ++) {
             System.out.println(i + "! is " + factorial(i));
         }
     }
@@ -21,9 +21,8 @@ public class Factorial
     public static int factorial(int n)
     {
         int result = 1;
-
-        // TODO 2: Please create a foor loop that counts from 2 up to and including n
-        for() {
+        // TODO 2: Please create a for loop that counts from 2 up to and including n
+        for(int i = 0; i <= n; i += 2) {
             result *= i;
         }
 

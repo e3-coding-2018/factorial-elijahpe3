@@ -22,7 +22,7 @@ public class Factorial
     {
         int result = 1;
         // TODO 2: Please create a for loop that counts from 2 up to and including n
-        for(int i = 0; i <= n; i += 2) {
+        for(int i = 2; i <= n; i += 1) {
             result *= i;
         }
 

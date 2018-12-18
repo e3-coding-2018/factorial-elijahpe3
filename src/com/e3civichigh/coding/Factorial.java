@@ -1,4 +1,6 @@
 package com.e3civichigh.coding;
+import java.math.BigInteger;
+
 
 public class Factorial
 {
@@ -18,14 +20,15 @@ public class Factorial
      * @param n
      * @return n factorial
      */
-    public static int factorial(int n)
-    {
-        int result = 1;
-        // TODO 2: Please create a for loop that counts from 2 up to and including n
-        for(int i = 2; i <= n; i += 1) {
-            result *= i;
+    public static BigInteger factorial(int number) {
+        BigInteger factorial = BigInteger.ONE;
+
+        for (int i = number; i > 0; i--) {
+            factorial = factorial.multiply(BigInteger.valueOf(i));
         }
 
-        return result;
+        return factorial;
     }
+
+
 }
